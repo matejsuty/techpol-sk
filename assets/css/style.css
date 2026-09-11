@@ -1232,6 +1232,15 @@ p {
   color: #7d8fa1;
 }
 
+.footer-legal {
+  flex: 1 0 100%;
+  order: 1;
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+
 .footer-bottom a {
   display: inline-flex;
   align-items: center;
