@@ -932,9 +932,37 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 18px 0 0;
+  margin: 18px 0 22px;
   padding: 0;
   list-style: none;
+}
+
+/* Zoznam pre dlhšie položky, kde by štítok bol neprehľadný. */
+.info-list {
+  margin: 16px 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.info-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 9px;
+}
+
+.info-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 9px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--blue);
+}
+
+.info-list strong {
+  font-weight: 650;
 }
 
 .tag-list li {
