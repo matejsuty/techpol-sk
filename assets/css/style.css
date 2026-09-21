@@ -649,6 +649,68 @@ p {
   transform: scale(1.04);
 }
 
+/* ---------- Galéria pred / po ---------- */
+
+.ba-grid {
+  display: grid;
+  gap: 28px;
+  margin: 24px 0 0;
+}
+
+.ba-shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Štvorec, nie 4/3: dvojice miešajú fotky na výšku aj na šírku
+   a takto sa z oboch oreže len okraj, predmet zostane v strede. */
+.ba-shot {
+  aspect-ratio: 1 / 1;
+}
+
+.ba-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+
+.ba-tag--pred {
+  background: var(--ink-mid);
+}
+
+.ba-tag--po {
+  background: var(--blue-dark);
+}
+
+.ba-pair figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 560px) {
+  .ba-shots {
+    gap: 8px;
+  }
+
+  .ba-tag {
+    top: 7px;
+    left: 7px;
+    padding: 3px 9px;
+    font-size: 0.66rem;
+  }
+}
+
 /* ---------- Lightbox ---------- */
 
 .lightbox {
@@ -960,6 +1022,12 @@ p {
 
 .contact-item span.value {
   display: block;
+}
+
+.contact-item span.value-muted {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink-soft);
 }
 
 .contact-item a,
