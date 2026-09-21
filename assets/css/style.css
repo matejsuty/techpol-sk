@@ -649,6 +649,14 @@ p {
   transform: scale(1.04);
 }
 
+.footnote {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
 /* ---------- Galéria pred / po ---------- */
 
 .ba-grid {
