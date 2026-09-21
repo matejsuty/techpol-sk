@@ -958,6 +958,10 @@ p {
   margin-bottom: 3px;
 }
 
+.contact-item span.value {
+  display: block;
+}
+
 .contact-item a,
 .contact-item span.value {
   font-size: 1.05rem;
@@ -967,6 +971,16 @@ p {
 
 .contact-item a:hover {
   color: var(--blue-dark);
+}
+
+.contact-item a.map-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .legal-note {
